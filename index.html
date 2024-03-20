@@ -9,9 +9,9 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="flex justify-center content-center bg-gray-900">
+<body class="flex justify-center content-center bg-gray-900 dark:bg-gray-200">
     <!-- outer container -->
-    <div class="border border-gray-300 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10 bg-gray-300">
+    <div class="border border-gray-300 dark:bg-gray-900 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10 bg-gray-300">
         <!-- header (profile) -->
         <header>
             <!-- social icons-->
@@ -191,8 +191,6 @@
                 <!-- Mes centres d'intérêt -->
                 <strong class="text-xl font-medium">Centres d'intérêt et loisirs</strong>
                 <ul class="mt-2">
-                    <li class="px-2 mt-1">Nouvelles technologies</li>
-                    <li class="px-2 mt-1">Electricité</li>
                     <li class="px-2 mt-1">Tennis de table</li>
                     <li class="px-2 mt-1">Voile</li>
                     <li class="px-2 mt-1">Voyage</li>
@@ -203,7 +201,8 @@
                 <section>
                     <!-- A propos de moi -->
                     <h2 class="text-2xl pb-1 border-b font-semibold">A propos de moi</h2>
-                    <p class="mt-4 text-xs">Passionné d'informatique depuis mes premiers pas avec un émulateur de
+                    <p class="mt-4 text-sm text-justify mt-5">Passionné d'informatique depuis mes premiers pas avec un
+                        émulateur de
                         serveur écrit en Java, j'ai exploré les rouages de la mise en place de serveurs, du
                         développement Java, et de la gestion de bases de données MySQL. Cette expérience m'a conduit à
                         une profonde compréhension des infrastructures réseau, permettant aux joueurs de se connecter et
@@ -236,7 +235,8 @@
                                 <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
                                 </li>
                             </ul> -->
-                            <p class="text-xs">Refactorisation d'un projet MVC en PHP avec le framework Yii2 pour un
+                            <p class="text-sm text-justify mt-5">Refactorisation d'un projet MVC en PHP avec le
+                                framework Yii2 pour un
                                 site extranet, comprenant la sécurisation du transfert de fichiers de FTP à SFTP.
                                 Réécriture du code PHP pour optimiser les performances et intégration de la génération
                                 de fichiers PDF pour la mise en valeur des données. Configuration et déploiement du
@@ -261,7 +261,8 @@
                                 <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
                                 </li>
                             </ul> -->
-                            <p class="text-xs">En tant que responsable du déploiement des API conformes à la norme PCI
+                            <p class="text-sm text-justify mt-5">En tant que responsable du déploiement des API
+                                conformes à la norme PCI
                                 DSS, j'ai orchestré leur mise en place au sein de conteneurs Docker et Docker Compose.
                                 J'ai configuré un environnement sécurisé avec NGINX et un pare-feu d'application web
                                 (WAF) pour filtrer les différents points d'accès et méthodes.
@@ -298,7 +299,8 @@
                                 <!-- <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
                                 </li> -->
                             </ul>
-                            <p class="text-xs">Je conçois des pages appelées 'Ma Facture' destinées aux commerçants,
+                            <p class="text-sm text-justify mt-5">Je conçois des pages appelées 'Ma Facture' destinées
+                                aux commerçants,
                                 leur permettant de payer en toute sécurité sur la plateforme Payzen. Cette
                                 fonctionnalité a été implémentée en utilisant l'API Formulaire de Payzen ainsi que son
                                 API REST pour les ordres de paiement, le tout intégré dans un environnement PHP sous le
@@ -330,7 +332,8 @@
                                 <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
                                 </li> -->
                             </ul>
-                            <p class="text-xs">En tant que responsable de l'intégration et de la gestion des
+                            <p class="text-sm text-justify mt-5">En tant que responsable de l'intégration et de la
+                                gestion des
                                 infrastructures, je suis chargé de mettre en place et de maintenir l'authentification
                                 via l'Active Directory (AD) en utilisant le protocole LDAPS sur des serveurs Windows
                                 dédiés à nos filiales. Mon rôle consiste à créer des utilisateurs et des groupes, à les
@@ -353,10 +356,11 @@
                                     Bancaires</strong>1 fév 2021 à Maintenant</p>
                             <p class="flex justify-between text-base">Administrateur d'applications - Developpeur web -
                                 Support technique niv.2<small>Papeete</small></p>
-                            <p class="text-justify text-xs">En tant qu'administrateur d'applications, j'ai géré la
+                            <p class="text-justify text-sm text-justify">En tant qu'administrateur d'applications, j'ai
+                                géré la
                                 maintenance et le bon fonctionnement des sites Web existants, tout en assurant le
                                 support d'une plateforme de paiement essentielle.
-                            <ul class="list-disc pl-5 mt-2 text-justify text-xs">
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm text-justify">
                                 <li>Déploiement de conteneurs Docker et Docker Compose en conformité avec les normes
                                     PCI-DSS pour les environnements de test et de production.</li>
                                 <li>Correction des erreurs dans le code PHP et déploiement en production sous Docker.
