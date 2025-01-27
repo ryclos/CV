@@ -108,7 +108,7 @@
                     <li class="flex items-center justify-between mb-1">
                         <div class="w-2/3 bg-gray-200 rounded-full">
                             <div class="bg-purple-500 text-xs leading-none py-1 text-center text-white rounded-full"
-                                style="width: 75%;">PHP
+                                style="width: 75%;">ARUBA
                             </div>
                         </div>
                     </li>
@@ -230,9 +230,12 @@
                     <!-- A propos de moi -->
                     <h2 class="text-2xl pb-1 border-b border-gray-400 font-semibold">À propos de moi</h2>
                     <p class="mt-4 text-sm text-justify mt-5">
-                        Passionné d'informatique depuis mes débuts avec un émulateur de serveur Java, j'ai acquis une solide compréhension des infrastructures systèmes, réseaux et sécurité. 
-                        Mon rôle consistait à configurer serveurs, bases de données et droits d'accès, tout en assurant une expérience fluide pour les utilisateurs. 
-                        La gestion des ports sur serveurs Windows, Linux et routeurs, que je continue à pratiquer par passion, me permet de maintenir des compétences constamment à jour.
+                        Passionné d'informatique depuis mes débuts avec un émulateur de serveur Java, j'ai acquis une
+                        solide compréhension des infrastructures systèmes, réseaux et sécurité.
+                        Mon rôle consistait à configurer serveurs, bases de données et droits d'accès, tout en assurant
+                        une expérience fluide pour les utilisateurs.
+                        La gestion des ports sur serveurs Windows, Linux et routeurs, que je continue à pratiquer par
+                        passion, me permet de maintenir des compétences constamment à jour.
                     </p>
                 </section>
                 <section>
@@ -342,11 +345,13 @@
                 <section>
                     <!-- projects -->
                     <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400">Projets</h2>
+
                     <ul class="mt-1">
+                        <!-- Projet QMatic -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
                                 <strong>Mise en place serveur et borne QMatic pour CCISM</strong>
-                                <p class="flex">
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">VIRTUAL
                                         MACHINE</span>
@@ -354,32 +359,40 @@
                                         SERVER</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">RESEAUX</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">MATERIELS</span>
+                                </div>
+                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://rdv-entreprises.ccism.pf/qmaticwebbooking/#/" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Live</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Mise en place d'une architecture système et réseau pour QMatic en utilisant deux VM
+                                    Azure.
+                                    Le front-end permet l'accès à la prise de rendez-vous en ligne et le back-end
+                                    héberge
+                                    une API avec une interface administrateur pour gérer les plugins et configurations
+                                    des
+                                    rendez-vous ainsi que d'autres modules proposés par Qmatic Orchestra.
+                                    Il a fallu comprendre les besoins, estimer quel hébergeur choisir en s'assurant de
+                                    la
+                                    conformité avec le RGPD, puis effectuer toutes les installations nécessaires.
+                                    Une fois le système installé et fonctionnel, nous avons réalisé la recette avec le
+                                    client, incluant l'installation sur site du matériel, des bornes Qmatic, et du hub,
+                                    avec
+                                    les adresses IP adéquates pour communiquer avec l'API Orchestra hébergée sur une VM
+                                    Azure.
                                 </p>
                             </div>
-                            <ul class="flex mb-2">
-                                <li><a href="https://rdv-entreprises.ccism.pf/qmaticwebbooking/#/"
-                                        class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Live</a>
-                                </li>
-                                <!-- <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a></li> -->
-                            </ul>
-                            <p class="text-sm text-justify mt-5">
-                                Mise en place d'une architecture système et réseau pour QMatic en utilisant deux VM
-                                Azure.
-                                Le front-end permet l'accès à la prise de rendez-vous en ligne et le back-end héberge
-                                une API avec une interface administrateur pour gérer les plugins et configurations des
-                                rendez-vous ainsi que d'autres modules proposés par Qmatic Orchestra.
-                                Il a fallu comprendre les besoins, estimer quel hébergeur choisir en s'assurant de la
-                                conformité avec le RGPD, puis effectuer toutes les installations nécessaires.
-                                Une fois le système installé et fonctionnel, nous avons réalisé la recette avec le
-                                client, incluant l'installation sur site du matériel, des bornes Qmatic, et du hub, avec
-                                les adresses IP adéquates pour communiquer avec l'API Orchestra hébergée sur une VM
-                                Azure.
-                            </p>
                         </li>
+
+                        <!-- Projet Automatisation des renouvellements de certificats -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
                                 <strong>Automatisation des renouvellements de certificats</strong>
-                                <p class="flex">
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">VIRTUAL
                                         MACHINE</span>
@@ -387,83 +400,111 @@
                                         SERVER</span>
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                </div>
+                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://github.com/ryclos/scripts-utiles/tree/master/renewTrustore"
+                                            target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Un certificat Let's Encrypt gratuit, qui doit être mis à jour tous les deux mois car
+                                    il
+                                    expire après trois mois, était renouvelé manuellement. Lors de mon arrivée, j'ai
+                                    rédigé
+                                    un script en PowerShell permettant l'automatisation de ce processus. Ce script
+                                    applique
+                                    également les certificats dans le Keystore Java des applications QMatic, qui
+                                    fonctionnent sous Java. De plus, il met à jour les certificats pour une application
+                                    front QMatic, en les reliant symboliquement à ceux du répertoire Certbot et en
+                                    modifiant
+                                    leur format de PEM12 en CERT et KEY.
                                 </p>
                             </div>
-                            <ul class="flex mb-2">
-                                <li><a href="https://github.com/ryclos/Automatisation-renew-certbot/blob/master/renouvellement_cert_webbooking_mobileticket.ps1"
-                                        class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
-                                </li>
-                            </ul>
-                            <p class="text-sm text-justify mt-5">
-                                Un certificat Let's Encrypt gratuit, qui doit être mis à jour tous les deux mois car il
-                                expire après trois mois, était renouvelé manuellement. Lors de mon arrivée, j'ai rédigé
-                                un script en PowerShell permettant l'automatisation de ce processus. Ce script applique
-                                également les certificats dans le Keystore Java des applications QMatic, qui
-                                fonctionnent sous Java. De plus, il met à jour les certificats pour une application
-                                front QMatic, en les reliant symboliquement à ceux du répertoire Certbot et en modifiant
-                                leur format de PEM12 en CERT et KEY.
-                            </p>
                         </li>
+
+                        <!-- Projet Déploiement d'un script batch pour mode kiosk -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
                                 <strong>Déploiement d'un script batch pour mode kiosk</strong>
-                                <p class="flex">
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
                                         11</span>
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                </div>
+                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://github.com/ryclos/scripts-utiles/tree/master/kiosk_made"
+                                            target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Comprendre le besoin d'une entreprise souhaitant déployer des bornes interactives
+                                    sur
+                                    leurs différents sites de vente. Chaque borne se composait d'un mini PC et d'un
+                                    écran,
+                                    avec un système d'exploitation Windows 11 sur lequel était installée l'application
+                                    Intuiface.
+                                    Pour que l'application fonctionne en mode borne (kiosk) et soit accessible au public
+                                    tout en empêchant toute tentative d'accès au système sous-jacent, un script batch a
+                                    été
+                                    développé. Ce script crée un utilisateur Windows standard avec un mot de passe,
+                                    configure le mode kiosk et modifie le registre (regedit) pour un autologon avec cet
+                                    utilisateur. L'application Intuiface est alors lancée en mode shell à la place de
+                                    explorer.exe, assurant ainsi une expérience utilisateur sécurisée et ininterrompue.
                                 </p>
                             </div>
-                            <ul class="flex mb-2">
-                                <li><a href="https://github.com/ryclos/Automatisation-renew-certbot/blob/master/configure_kiosk_user.bat"
-                                        class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
-                                </li>
-                            </ul>
-                            <p class="text-sm text-justify mt-5">
-                                Comprendre le besoin d'une entreprise souhaitant déployer des bornes interactives sur
-                                leurs différents sites de vente. Chaque borne se composait d'un mini PC et d'un écran,
-                                avec un système d'exploitation Windows 11 sur lequel était installée l'application
-                                Intuiface.
-                                Pour que l'application fonctionne en mode borne (kiosk) et soit accessible au public
-                                tout en empêchant toute tentative d'accès au système sous-jacent, un script batch a été
-                                développé. Ce script crée un utilisateur Windows standard avec un mot de passe,
-                                configure le mode kiosk et modifie le registre (regedit) pour un autologon avec cet
-                                utilisateur. L'application Intuiface est alors lancée en mode shell à la place de
-                                explorer.exe, assurant ainsi une expérience utilisateur sécurisée et ininterrompue.
-                            </p>
                         </li>
-                        <!-- <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
-                                <strong>Déploiement d'API sous PCI-DSS - <i>OSB</i></strong>
-                                <p class="flex">
+
+                        <!-- Projet Déploiement d'API sous PCI-DSS -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                                <strong>Déploiement d'API sous PCI-DSS</strong>
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER
                                         COMPOSE</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                </div>
+                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
+                            </div>
+                            <div class="mt-2 hidden">
+                                <p class="text-sm text-justify mt-5">En tant que responsable du déploiement des API
+                                    conformes à la norme PCI
+                                    DSS, j'ai orchestré leur mise en place au sein de conteneurs Docker et Docker
+                                    Compose.
+                                    J'ai configuré un environnement sécurisé avec NGINX et un pare-feu d'application web
+                                    (WAF) pour filtrer les différents points d'accès et méthodes.
+                                    <br>
+                                    La phase de déploiement, de la pré-production à la mise en production, est une tâche
+                                    complexe et délicate, impliquant un impact sur plus de 20 000 utilisateurs. Ce
+                                    processus
+                                    est géré depuis notre référentiel Git, assurant ainsi un contrôle de version et une
+                                    traçabilité efficace.
+                                    <br>
+                                    En cas d'incidents, je suis chargé de détecter les traces d'erreurs (stack traces),
+                                    de
+                                    les remonter et d'appliquer les corrections nécessaires une fois qu'elles sont
+                                    validées
+                                    et mises à disposition.
                                 </p>
                             </div>
-                            <p class="text-sm text-justify mt-5">En tant que responsable du déploiement des API
-                                conformes à la norme PCI
-                                DSS, j'ai orchestré leur mise en place au sein de conteneurs Docker et Docker Compose.
-                                J'ai configuré un environnement sécurisé avec NGINX et un pare-feu d'application web
-                                (WAF) pour filtrer les différents points d'accès et méthodes.
-                                <br>
-                                La phase de déploiement, de la pré-production à la mise en production, est une tâche
-                                complexe et délicate, impliquant un impact sur plus de 20 000 utilisateurs. Ce processus
-                                est géré depuis notre référentiel Git, assurant ainsi un contrôle de version et une
-                                traçabilité efficace.
-                                <br>
-                                En cas d'incidents, je suis chargé de détecter les traces d'erreurs (stack traces), de
-                                les remonter et d'appliquer les corrections nécessaires une fois qu'elles sont validées
-                                et mises à disposition.
-                            </p>
-                        </li> -->
-                        <!-- <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
+                        </li>
+
+                        <!-- Projet Evolution et Optimisation -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
                                 <strong>Evolution et Optimisation</strong>
-                                <p class="flex">
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">PHP</span>
@@ -473,63 +514,80 @@
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://portal.osb.pf/easy-pay/axa/ma-facture.html" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">Je conçois des pages appelées 'Ma Facture'
+                                    destinées
+                                    aux commerçants,
+                                    leur permettant de payer en toute sécurité sur la plateforme Payzen. Cette
+                                    fonctionnalité a été implémentée en utilisant l'API Formulaire de Payzen ainsi que
+                                    son
+                                    API REST pour les ordres de paiement, le tout intégré dans un environnement PHP sous
+                                    le
+                                    framework Yii2, en respectant le modèle MVC.
+                                    <br />
+                                    Le site web bénéficie d'un suivi continu et est régulièrement mis à jour pour
+                                    garantir
+                                    sa performance et sa pertinence. Cela inclut l'ajout de nouveaux commerçants, la
+                                    maintenance du code pour assurer sa maintenabilité, ainsi que la correction des bugs
+                                    et
+                                    l'intégration d'évolutions fonctionnelles.
+                                    <br>
+                                    (Une page est mis en exemple dans live)
                                 </p>
                             </div>
-                            <ul class="flex mb-2">
-                                <li><a href="https://portal.osb.pf/easy-pay/axa/ma-facture.html" target="_blank"
-                                        class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
-                                </li>
-                            </ul>
-                            <p class="text-sm text-justify mt-5">Je conçois des pages appelées 'Ma Facture' destinées
-                                aux commerçants,
-                                leur permettant de payer en toute sécurité sur la plateforme Payzen. Cette
-                                fonctionnalité a été implémentée en utilisant l'API Formulaire de Payzen ainsi que son
-                                API REST pour les ordres de paiement, le tout intégré dans un environnement PHP sous le
-                                framework Yii2, en respectant le modèle MVC.
-                                <br />
-                                Le site web bénéficie d'un suivi continu et est régulièrement mis à jour pour garantir
-                                sa performance et sa pertinence. Cela inclut l'ajout de nouveaux commerçants, la
-                                maintenance du code pour assurer sa maintenabilité, ainsi que la correction des bugs et
-                                l'intégration d'évolutions fonctionnelles.
-                                <br>
-                                (Une page est mis en exemple dans live)
-                            </p>
-                        </li> -->
+                        </li>
+
+                        <!-- Exploitation et bon fonctionnement -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 my-1 bg-black bg-opacity-25 p-1 rounded">
-                                <strong>Exploitation et bon fonctionnement - OSB</strong>
-                                <p class="flex">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                                <strong>Exploitation et bon fonctionnement</strong>
+                                <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LDAPS</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
                                         SERVER</span>
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CERTIFICAT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">TOMCAT</span>
-                                </p>
+                                </div>
                             </div>
-                            <ul class="flex mb-2">
-                                <!-- <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <!-- <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
                                 </li>
                                 <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
                                 </li> -->
-                            </ul>
-                            <p class="text-sm text-justify mt-5">En tant que responsable de l'intégration et de la
-                                gestion des
-                                infrastructures, je suis chargé de mettre en place et de maintenir l'authentification
-                                via l'Active Directory (AD) en utilisant le protocole LDAPS sur des serveurs Windows
-                                dédiés à nos filiales. Mon rôle consiste à créer des utilisateurs et des groupes, à les
-                                associer, à gérer leurs mots de passe et à configurer les connexions aux API en
-                                utilisant des certificats pour assurer une sécurité renforcée.
-                                <br>
-                                De plus, je supervise et configure les serveurs Tomcat et Apache sur ces mêmes serveurs
-                                Windows, en veillant à ce qu'ils acceptent les connexions sécurisées via des certificats
-                                SSL et en garantissant que les noms de serveur appropriés sont correctement configurés.
-                            </p>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">En tant que responsable de l'intégration et de la
+                                    gestion des
+                                    infrastructures, je suis chargé de mettre en place et de maintenir
+                                    l'authentification
+                                    via l'Active Directory (AD) en utilisant le protocole LDAPS sur des serveurs Windows
+                                    dédiés à nos filiales. Mon rôle consiste à créer des utilisateurs et des groupes, à
+                                    les
+                                    associer, à gérer leurs mots de passe et à configurer les connexions aux API en
+                                    utilisant des certificats pour assurer une sécurité renforcée.
+                                    <br>
+                                    De plus, je supervise et configure les serveurs Tomcat et Apache sur ces mêmes
+                                    serveurs
+                                    Windows, en veillant à ce qu'ils acceptent les connexions sécurisées via des
+                                    certificats
+                                    SSL et en garantissant que les noms de serveur appropriés sont correctement
+                                    configurés.
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </section>
+
+                <!-- Parcours Scolaire -->
                 <section class="mb-6">
-                    <!-- Parcours Scolaire -->
                     <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400 font-semibold">Parcours Scolaire</h2>
                     <ul class="mt-2">
                         <li class="pt-2">
@@ -546,7 +604,8 @@
                 </section>
             </div>
         </main>
-        <!-- short lines to introduce myself -->
+
+        <!-- Fin de page et blagues -->
         <footer class="mt-6">
             <p class="bg-gray-600 text-white text-center text-sm pb-2 rounded-t">La technologie nous offre plus de
                 temps, mais
@@ -560,6 +619,19 @@
     </div>
 </body>
 <script>
+
+    function toggleContent(element) {
+        // Trouver le contenu associé
+        const content = element.nextElementSibling;
+
+        // Basculer la visibilité du contenu
+        content.classList.toggle("hidden");
+
+        // Basculer la rotation de la flèche
+        const arrow = element.querySelector("span");
+        arrow.classList.toggle("rotate-180");
+    }
+
     //const heartEmoji = '❤️';
     const year = new Date().getFullYear();
     //document.getElementById('heart').innerText = heartEmoji;
