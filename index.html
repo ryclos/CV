@@ -213,7 +213,9 @@
                 <strong class="text-xl font-medium">Formation complémentaire</strong>
                 <ul class="mt-2 mb-10">
                     <li class="px-2 mt-1"><b>2018</b> - TahitiCodeCamp dev. web CNAM Polynésie</li>
-                </ul>
+                    <li class="px-2 mt-1"><b>2025</b> - CCNA 200-301 <span
+                            class="animate-pulse text-blue-500 px-2 py-1 border border-blue-500 rounded-md bg-blue-100 duration-500">
+                            En prévision</span></li>
                 </ul>
                 <!-- Mes centres d'intérêt -->
                 <strong class="text-xl font-medium">Centres d'intérêt et loisirs</strong>
@@ -350,9 +352,36 @@
                     <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400">Projets</h2>
 
                     <ul class="mt-1">
+                        <!-- Projet Switch -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Configuration et déploiement de commutateurs réseau sur site</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">ARUBA</span>
+                                    <span
+                                        class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">COMMUTATEUR</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">RESEAUX</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">MATERIELS</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <!-- <ul class="flex mb-2">
+                                    <li><a href="https://rdv-entreprises.ccism.pf/qmaticwebbooking/#/" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Live</a>
+                                    </li>
+                                </ul> -->
+                                <p class="text-sm text-justify mt-5"> J'ai configuré et déployé 6 commutateurs (switch) 48 ports pour une mission dans les îles et à Tahiti. Cette mission comprenait la remise à neuf d'anciens équipements réseau devenus obsolètes. J'ai dû m'adapter à une nouvelle syntaxe de configuration différente de celle des anciens modèles, ce qui a nécessité une étude approfondie de la documentation technique. Mes responsabilités incluaient la création de nouveaux VLAN, dont un VLAN dédié à la gestion pour un accès à distance, la mise en place d'ACL (listes de contrôle d'accès) pour la sécurité, ainsi que la configuration SNMP pour la supervision des équipements. Enfin, j'ai assuré l'installation physique des commutateurs et le brassage dans la baie informatique du site. </p>
+                            </div>
+                        </li>
                         <!-- Projet QMatic -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Mise en place serveur et borne QMatic pour CCISM</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
@@ -362,8 +391,11 @@
                                         SERVER</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">RESEAUX</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">MATERIELS</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
-                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
                             </div>
                             <div class="mt-2 hidden">
                                 <ul class="flex mb-2">
@@ -393,7 +425,8 @@
 
                         <!-- Projet Automatisation des renouvellements de certificats -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Automatisation des renouvellements de certificats</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
@@ -403,8 +436,11 @@
                                         SERVER</span>
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
-                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
                             </div>
                             <div class="mt-2 hidden">
                                 <ul class="flex mb-2">
@@ -431,15 +467,19 @@
 
                         <!-- Projet Déploiement d'un script batch pour mode kiosk -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Déploiement d'un script batch pour mode kiosk</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
                                         11</span>
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
-                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
                             </div>
                             <div class="mt-2 hidden">
                                 <ul class="flex mb-2">
@@ -468,7 +508,8 @@
 
                         <!-- Projet Déploiement d'API sous PCI-DSS -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Déploiement d'API sous PCI-DSS</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
@@ -477,8 +518,11 @@
                                         COMPOSE</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
-                                <!-- <span class="transform transition-transform duration-300">▼</span> -->
                             </div>
                             <div class="mt-2 hidden">
                                 <p class="text-sm text-justify mt-5">En tant que responsable du déploiement des API
@@ -505,7 +549,8 @@
 
                         <!-- Projet Evolution et Optimisation -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Evolution et Optimisation</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
@@ -517,6 +562,10 @@
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mt-2 hidden">
@@ -549,7 +598,8 @@
 
                         <!-- Exploitation et bon fonctionnement -->
                         <li class="py-2">
-                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer" onclick="toggleContent(this)">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
                                 <strong>Exploitation et bon fonctionnement</strong>
                                 <div class="flex">
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LDAPS</span>
@@ -558,6 +608,10 @@
                                     <span
                                         class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CERTIFICAT</span>
                                     <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">TOMCAT</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mt-2 hidden">
