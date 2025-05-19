@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAMBRUN Hi'omai CV</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex justify-center content-center bg-gray-900 dark:bg-gray-200">
+    <!-- outer container -->
+    <div class="border border-gray-300 dark:bg-gray-900 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10 bg-gray-300">
+        <!-- header (profile) -->
+        <header>
+            <!-- social icons-->
+            <ul class="flex flex-wrap justify-end gap-2">
+                <!-- linkedin -->
+                <li>
+                    <a href="https://www.linkedin.com/in/hiomai-pambrun-757952239/"
+                        class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:bg-blue-900"
+                        target=”_blank”>
+                        <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <!-- github -->
+                    <a href="https://github.com/ryclos"
+                        class="bg-gray-700 p-2 font-medium text-white inline-flex items-center space-x-2 rounded hover:bg-gray-500"
+                        target=”_blank”>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24">
+                            <g fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <!-- Photo de profil -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="bg-cover bg-no-repeat rounded-full h-52 w-52"
+                        style="background-image: url(images/hiomai.jpg)">
+                    </div>
+                </div>
+                <div class="grid justify-items-start">
+                    <h1 class="text-7xl font-extrabold">PAMBRUN <br /> Hi'omai</h1>
+                    <p class="text-3xl mt-5 "></p>
+                </div>
+            </div>
+        </header>
+        <!-- detail info -->
+        <main class="flex gap-x-10 mt-10">
+            <div class="w-2/6">
+                <!-- coordonnées -->
+                <strong class="text-xl font-medium">Mes coordonnées</strong>
+                <ul class="mt-2 mb-10">
+                    <!--<li class="px-2 mt-1">
+                        <a href="tel:+33" class="block"></a>
+                    </li>-->
+                    <li class="px-2 mt-1">
+                        <a href="mailto:" class="block">hiomai.pambrun@pm.me</a>
+                    </li>
+                    <li class="px-2 mt-1">
+                        <a href="mailto:" class="block">Punaauia</a>
+                    </li>
+                    <li class="px-2 mt-1">
+                        <a href="mailto:" class="block">Tahiti</a>
+                    </li>
+                </ul>
+
+                <!-- Compétences -->
+                <strong class="text-xl font-medium">Compétences</strong>
+                <ul class="grid grid-cols-2 gap-1 mt-2 mb-10">
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-pink-600 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 85%;">HTML
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-blue-600 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 75%;">CSS
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-yellow-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 75%;">ARUBA
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-blue-200 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 75%;">SQL
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-purple-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 75%;">APACHE
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-red-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 65%;">JAVA
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-gray-900 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 85%;">LINUX
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-1">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-blue-300 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 85%;">DOCKER & COMPOSE
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-green-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 80%;">NGINX
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-gradient-to-r from-blue-300 to-blue-600 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 65%;">VM AZURE
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-gradient-to-r from-red-300 to-red-600 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 65%;">SHELL
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-gradient-to-r from-gray-500 to-green-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 45%;">POWERSHELL
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="w-2/3 bg-gray-200 rounded-full">
+                            <div class="bg-gradient-to-r from-blue-500 to-yellow-500 text-xs leading-none py-1 text-center text-white rounded-full"
+                                style="width: 55%;">PYTHON
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Techno utilisées -->
+                <strong class="text-xl font-medium">Technologies Utilisées</strong>
+                <ul class="grid grid-cols-2 gap-x-2 mt-2 mb-10">
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/jetbrains.svg" alt="jetbrains" class="h-8 w-8 mr-2 inline-block">
+                        jetbrains
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/apache.svg" alt="apache" class="h-8 w-8 mr-2 inline-block">
+                        apache
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/linux.svg" alt="linux" class="h-8 w-8 mr-2 inline-block">
+                        linux
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/git.svg" alt="git" class="h-8 w-8 mr-2 inline-block">
+                        git
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/docker.svg" alt="docker" class="h-8 w-8 mr-2 inline-block">
+                        docker
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/nestjs.svg" alt="nestjs" class="h-8 w-8 mr-2 inline-block">
+                        nestjs
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/nginx.svg" alt="nginx" class="h-8 w-8 mr-2 inline-block">
+                        nginx
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/vscode.svg" alt="vscode" class="h-8 w-8 mr-2 inline-block">
+                        vscode
+                    </li>
+                    <li class="px-2 mt-1">
+                        <img src="images/logos/nextjs.svg" alt="nextjs" class="h-8 w-8 mr-2 inline-block">
+                        nextjs
+                    </li>
+                </ul>
+                <!-- Formation complémentaire -->
+                <strong class="text-xl font-medium">Formation complémentaire</strong>
+                <ul class="mt-2 mb-10">
+                    <li class="px-2 mt-1"><b>2018</b> - TahitiCodeCamp dev. web CNAM Polynésie</li>
+                    <li class="px-2 mt-1"><b>2025</b> - CCNA 200-301 <span
+                            class="animate-pulse text-blue-500 px-2 py-1 border border-blue-500 rounded-md bg-blue-100 duration-500">
+                            En prévision</span></li>
+                </ul>
+                <!-- Mes centres d'intérêt -->
+                <strong class="text-xl font-medium">Centres d'intérêt et loisirs</strong>
+                <ul class="mt-2">
+                    <li class="px-2 mt-1">Emulateur Serveur Lineage II</li>
+                    <li class="px-2 mt-1">Tennis de table</li>
+                    <li class="px-2 mt-1">Voile</li>
+                    <li class="px-2 mt-1">Voyage</li>
+                </ul>
+            </div>
+            <!-- info -->
+            <div class="w-4/6">
+                <section>
+                    <!-- A propos de moi -->
+                    <h2 class="text-2xl pb-1 border-b border-gray-400 font-semibold">À propos de moi</h2>
+                    <p class="mt-4 text-sm text-justify mt-5">
+                        Passionné d'informatique depuis mes débuts avec un émulateur de serveur Java, j'ai acquis une
+                        solide compréhension des infrastructures systèmes, réseaux et sécurité.
+                        Mon rôle consistait à configurer serveurs, bases de données et droits d'accès, tout en assurant
+                        une expérience fluide pour les utilisateurs.
+                        La gestion des ports sur serveurs Windows, Linux et routeurs, que je continue à pratiquer par
+                        passion, me permet de maintenir des compétences constamment à jour.
+                    </p>
+                </section>
+                <section>
+                    <!-- work experiences -->
+                    <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400 font-semibold">Parcours professionel</h2>
+                    <ul class="mt-2">
+                        <!-- work experiences BRAINIX -->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">BRAINIX</strong>
+                                <b>Avril 2025 à Présent</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">
+                                Technicien informatique niveau 1, technicien systèmes et réseaux
+                                <small>Papeete</small>
+                            </p>
+                            <p class="text-justify text-sm mt-2">
+                                En tant que technicien, je gère l’ensemble des parcs informatiques matériels et
+                                logiciels, ainsi que les serveurs de plusieurs lycées et d’un hôtel.
+                                Mes missions incluent la supervision, la maintenance et la configuration du matériel
+                                réseau, aussi bien physique que logique.
+                                Je m’assure que l’ensemble du matériel reste opérationnel afin de garantir la continuité
+                                de service.
+                                Je veille également à ce que les différents réseaux soient bien segmentés et redondants,
+                                pour éviter toute interruption lors des pics d’utilisation.
+                                En cas de problème, j’interviens rapidement pour débloquer la situation, puis je
+                                collabore avec mon équipe pour en identifier la cause et la résoudre.
+                                Je travaille avec plusieurs interlocuteurs : collègues techniciens (câbleurs,
+                                techniciens niveaux 1 et 2), ainsi que les référents des établissements.
+                            </p>
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm">
+                                <li>Intervention sur site ou à distance pour la gestion des serveurs et du réseau.</li>
+                                <li>Assistance aux utilisateurs en cas de problème système ou réseau sur leur poste.
+                                </li>
+                                <li>Paramétrage des switchs : interfaces, VLANs, adresses IP.</li>
+                                <li>Supervision des équipements pour assurer leur bon fonctionnement.</li>
+                                <li>Suivi et traitement des tickets d’incidents.</li>
+                            </ul>
+                        </li>
+                        <!-- work experiences Direction du Système d'Information-->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">Direction du Système d'Information</strong>
+                                <b>Octobre 2024 à Avril 2025</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">
+                                Technicien Système et Réseau
+                                <small>Papeete</small>
+                            </p>
+                            <p class="text-justify text-sm mt-2">
+                                En tant que Technicien, je gère l'ensemble des parcs informatiques des différentes
+                                administrations de Tahiti.
+                                Mes missions incluent la supervision, la maintenance et la configuration du matériel
+                                réseau (serveurs de fichiers, NAS, switchs, routeurs).
+                                Je configure des VLANs pour segmenter les réseaux, mets en place des RAID logiciels
+                                (RAID 0 et RAID 1), et restaure les ACL en cas de besoin.
+                                Je veille à la vérification des sauvegardes quotidiennes et hebdomadaires, et
+                                j'interviens pour corriger et restaurer les systèmes en cas d'erreur.
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm">
+                                <li>Intervention sur les sites distants ou sur place pour la gestion des serveurs de
+                                    fichiers, NAS, switchs et routeurs.</li>
+                                <li>Configuration de RAID logiciels (RAID 0 et RAID 1).</li>
+                                <li>Paramétrage des switchs : interfaces, VLANs et IP.</li>
+                                <li>Supervision des équipements via SNMP pour garantir leur bon fonctionnement.</li>
+                                <li>Gestion des sauvegardes : vérification, réparation et restauration.</li>
+                            </ul>
+                            </p>
+                        </li>
+                        <!-- work experiences Tahiti Numérique -->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">Tahiti Numérique</strong>
+                                <b>Mai 2024 à Octobre 2024</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">
+                                SysOps et Responsable Matériel
+                                <small>Papeete</small>
+                            </p>
+                            <p class="text-justify text-sm mt-2">
+                                En tant que SysOps, je gère l'ensemble du parc informatique des utilisateurs de Tahiti
+                                Numérique ainsi que les serveurs des clients sous Linux et Windows. Je suis également
+                                responsable du matériel de Tahiti Numérique, comprenant les bornes Qmatic, les
+                                ordinateurs, le soft routeur, le réseau infra et les périphériques. Enfin, je suis
+                                également opérateur de sécurité.
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm">
+                                <li>Configuration et test des bornes Qmatic pour divers clients</li>
+                                <li>Gestion des VM Azure en Front et Back End Qmatic</li>
+                                <li>Inventaire et monitoring des ordinateurs et périphériques de Tahiti Numérique</li>
+                                <li>Gestion des serveurs Linux OVH pour les applications Maarch</li>
+                                <li>Administration du firewall, du proxy, de l'annuaire des utilisateurs et de l'EDR
+                                    pour Tahiti Numérique</li>
+                            </ul>
+                            </p>
+                        </li>
+                        <!-- work experiences Océanienne de Services -->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">Océanienne de Services Bancaires</strong>
+                                <b>Février 2021 à mai 2024</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">Administrateur d'applications -
+                                Developpeur web -
+                                Support technique niv.2<small>Papeete</small></p>
+                            <p class="text-justify text-sm text-justify mt-2">En tant qu'administrateur d'applications,
+                                j'ai
+                                géré la
+                                maintenance et le bon fonctionnement des sites Web existants, tout en assurant le
+                                support d'une plateforme de paiement essentielle.
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm text-justify">
+                                <li>Déploiement de conteneurs Docker et Docker Compose en conformité avec les normes
+                                    PCI-DSS pour les environnements de test et de production.</li>
+                                <li>Correction des erreurs dans le code PHP et déploiement en production sous Docker.
+                                </li>
+                                <li>Optimisation des connexions sécurisées aux bases de données.</li>
+                                <li>Configuration de serveurs reverse proxy (Nginx ou Apache) pour la gestion des flux
+                                    web.</li>
+                                <li>Gestion du workflow entre les environnements de développement, de préproduction et
+                                    de production avec Git, Docker et Docker Compose.</li>
+                                <li>Coordination avec des techniciens externes pour le support de niveau 2 lors de
+                                    l'intégration de modules de paiement.</li>
+                                <li>Gestion annuelle des certificats SSL pour tous les serveurs de l'entreprise et de
+                                    ses filiales.</li>
+                            </ul>
+                            </p>
+                        </li>
+                        <!-- work experiences Freelance -->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">Freelance</strong>
+                                <b>2018-2020</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">Intégrateur web - CMS
+                                Prestashop/Wordpress<small>Raiatea</small></p>
+                            <p class="text-justify text-sm mt-2">En tant qu'intégrateur web spécialisé en HTML/CSS et
+                                PHP,
+                                j'ai travaillé sur le CMS PrestaShop pour un client basé à Raiatea. Mes responsabilités
+                                comprenaient l'amélioration et la mise en place de modules, ainsi que l'optimisation du
+                                code HTML et CSS en réponse aux exigences spécifiques du client.
+                            </p>
+                        </li>
+                        <!-- work experiences Freelance -->
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm bg-black bg-opacity-25 p-1 rounded">
+                                <strong class="text-base">Freelance</strong>
+                                <b>2018-2019</b>
+                            </p>
+                            <p class="flex justify-between text-base underline">Chef de projet - Product
+                                owner<small>Tahiti -Raiatea</small></p>
+                            <ul class="list-disc pl-5 mt-2 text-justify text-sm text-justify">
+                                <li>Analyse des besoins clients : Recueil et formalisation des exigences fonctionnelles
+                                    et
+                                    techniques du client dans un cahier des charges détaillé, en veillant à une
+                                    compréhension
+                                    précise des objectifs et des contraintes.
+                                </li>
+
+                                <li>Coordination avec l'équipe de développement : Transmission du cahier des charges au
+                                    chef de
+                                    projet et à l'équipe de développement pour la conception et la réalisation du MVP
+                                    (Minimum
+                                    Viable Product).
+                                </li>
+
+                                <li>Suivi du développement : Collaboration étroite avec l'équipe technique pour assurer
+                                    le
+                                    respect des délais, des spécifications et de la qualité du produit.
+                                </li>
+
+                                <li>Validation et feedback client : Organisation de réunions de suivi avec le client
+                                    pour
+                                    présenter le MVP, recueillir les retours et identifier les axes d'amélioration.
+                                </li>
+
+                                <li>Gestion des itérations : Coordination des ajustements et des évolutions du produit
+                                    en
+                                    fonction des feedbacks clients, jusqu'à la livraison finale.
+                                </li>
+
+                                <li>Communication et reporting : Mise en place d'un reporting régulier pour informer le
+                                    client
+                                    de l'avancement du projet et garantir une transparence totale.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- projects -->
+                    <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400 font-semibold">Projets</h2>
+
+                    <ul class="mt-1">
+                        <!-- Projet Switch -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Configuration et déploiement de commutateurs réseau sur site</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">ARUBA</span>
+                                    <span
+                                        class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">COMMUTATEUR</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">RESEAUX</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">MATERIELS</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <!-- <ul class="flex mb-2">
+                                    <li><a href="https://rdv-entreprises.ccism.pf/qmaticwebbooking/#/" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Live</a>
+                                    </li>
+                                </ul> -->
+                                <p class="text-sm text-justify mt-5"> J'ai configuré et déployé 6 commutateurs (switch)
+                                    48 ports pour une mission dans les îles et à Tahiti. Cette mission comprenait la
+                                    remise à neuf d'anciens équipements réseau devenus obsolètes. J'ai dû m'adapter à
+                                    une nouvelle syntaxe de configuration différente de celle des anciens modèles, ce
+                                    qui a nécessité une étude approfondie de la documentation technique. Mes
+                                    responsabilités incluaient la création de nouveaux VLAN, dont un VLAN dédié à la
+                                    gestion pour un accès à distance, la mise en place d'ACL (listes de contrôle
+                                    d'accès) pour la sécurité, ainsi que la configuration SNMP pour la supervision des
+                                    équipements. Enfin, j'ai assuré l'installation physique des commutateurs et le
+                                    brassage dans la baie informatique du site. </p>
+                            </div>
+                        </li>
+                        <!-- Projet QMatic -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Mise en place serveur et borne QMatic pour CCISM</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">VIRTUAL
+                                        MACHINE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
+                                        SERVER</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">RESEAUX</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">MATERIELS</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://rdv-entreprises.ccism.pf/qmaticwebbooking/#/" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Live</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Mise en place d'une architecture système et réseau pour QMatic en utilisant deux VM
+                                    Azure.
+                                    Le front-end permet l'accès à la prise de rendez-vous en ligne et le back-end
+                                    héberge
+                                    une API avec une interface administrateur pour gérer les plugins et configurations
+                                    des
+                                    rendez-vous ainsi que d'autres modules proposés par Qmatic Orchestra.
+                                    Il a fallu comprendre les besoins, estimer quel hébergeur choisir en s'assurant de
+                                    la
+                                    conformité avec le RGPD, puis effectuer toutes les installations nécessaires.
+                                    Une fois le système installé et fonctionnel, nous avons réalisé la recette avec le
+                                    client, incluant l'installation sur site du matériel, des bornes Qmatic, et du hub,
+                                    avec
+                                    les adresses IP adéquates pour communiquer avec l'API Orchestra hébergée sur une VM
+                                    Azure.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Projet Automatisation des renouvellements de certificats -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Automatisation des renouvellements de certificats</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">AZURE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">VIRTUAL
+                                        MACHINE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
+                                        SERVER</span>
+                                    <span
+                                        class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://github.com/ryclos/scripts-utiles/tree/master/renewTrustore"
+                                            target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Un certificat Let's Encrypt gratuit, qui doit être mis à jour tous les deux mois car
+                                    il
+                                    expire après trois mois, était renouvelé manuellement. Lors de mon arrivée, j'ai
+                                    rédigé
+                                    un script en PowerShell permettant l'automatisation de ce processus. Ce script
+                                    applique
+                                    également les certificats dans le Keystore Java des applications QMatic, qui
+                                    fonctionnent sous Java. De plus, il met à jour les certificats pour une application
+                                    front QMatic, en les reliant symboliquement à ceux du répertoire Certbot et en
+                                    modifiant
+                                    leur format de PEM12 en CERT et KEY.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Projet Déploiement d'un script batch pour mode kiosk -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Déploiement d'un script batch pour mode kiosk</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
+                                        11</span>
+                                    <span
+                                        class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">POWERSHELL</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://github.com/ryclos/scripts-utiles/tree/master/kiosk_made"
+                                            target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded hover:bg-blue-900">Script</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">
+                                    Comprendre le besoin d'une entreprise souhaitant déployer des bornes interactives
+                                    sur
+                                    leurs différents sites de vente. Chaque borne se composait d'un mini PC et d'un
+                                    écran,
+                                    avec un système d'exploitation Windows 11 sur lequel était installée l'application
+                                    Intuiface.
+                                    Pour que l'application fonctionne en mode borne (kiosk) et soit accessible au public
+                                    tout en empêchant toute tentative d'accès au système sous-jacent, un script batch a
+                                    été
+                                    développé. Ce script crée un utilisateur Windows standard avec un mot de passe,
+                                    configure le mode kiosk et modifie le registre (regedit) pour un autologon avec cet
+                                    utilisateur. L'application Intuiface est alors lancée en mode shell à la place de
+                                    explorer.exe, assurant ainsi une expérience utilisateur sécurisée et ininterrompue.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Projet Déploiement d'API sous PCI-DSS -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Déploiement d'API sous PCI-DSS</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER
+                                        COMPOSE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <p class="text-sm text-justify mt-5">En tant que responsable du déploiement des API
+                                    conformes à la norme PCI
+                                    DSS, j'ai orchestré leur mise en place au sein de conteneurs Docker et Docker
+                                    Compose.
+                                    J'ai configuré un environnement sécurisé avec NGINX et un pare-feu d'application web
+                                    (WAF) pour filtrer les différents points d'accès et méthodes.
+                                    <br>
+                                    La phase de déploiement, de la pré-production à la mise en production, est une tâche
+                                    complexe et délicate, impliquant un impact sur plus de 20 000 utilisateurs. Ce
+                                    processus
+                                    est géré depuis notre référentiel Git, assurant ainsi un contrôle de version et une
+                                    traçabilité efficace.
+                                    <br>
+                                    En cas d'incidents, je suis chargé de détecter les traces d'erreurs (stack traces),
+                                    de
+                                    les remonter et d'appliquer les corrections nécessaires une fois qu'elles sont
+                                    validées
+                                    et mises à disposition.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Projet Evolution et Optimisation -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Evolution et Optimisation</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">PHP</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">DOCKER
+                                        COMPOSE</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">NGINX</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">GIT</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LINUX</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <li><a href="https://portal.osb.pf/easy-pay/axa/ma-facture.html" target="_blank"
+                                            class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                    </li>
+                                </ul>
+                                <p class="text-sm text-justify mt-5">Je conçois des pages appelées 'Ma Facture'
+                                    destinées
+                                    aux commerçants,
+                                    leur permettant de payer en toute sécurité sur la plateforme Payzen. Cette
+                                    fonctionnalité a été implémentée en utilisant l'API Formulaire de Payzen ainsi que
+                                    son
+                                    API REST pour les ordres de paiement, le tout intégré dans un environnement PHP sous
+                                    le
+                                    framework Yii2, en respectant le modèle MVC.
+                                    <br />
+                                    Le site web bénéficie d'un suivi continu et est régulièrement mis à jour pour
+                                    garantir
+                                    sa performance et sa pertinence. Cela inclut l'ajout de nouveaux commerçants, la
+                                    maintenance du code pour assurer sa maintenabilité, ainsi que la correction des bugs
+                                    et
+                                    l'intégration d'évolutions fonctionnelles.
+                                    <br>
+                                    (Une page est mis en exemple dans live)
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Exploitation et bon fonctionnement -->
+                        <li class="py-2">
+                            <div class="flex justify-between my-1 bg-black bg-opacity-25 hover:bg-gray-700 p-1 rounded cursor-pointer"
+                                onclick="toggleContent(this)">
+                                <strong>Exploitation et bon fonctionnement</strong>
+                                <div class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">LDAPS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">WINDOWS
+                                        SERVER</span>
+                                    <span
+                                        class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CERTIFICAT</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">TOMCAT</span>
+                                    <div class="flex flex-col space-y-1 ml-3">
+                                        <span
+                                            class="block w-5 h-[2px] animate-pulse text-black-500 duration-500">▼</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 hidden">
+                                <ul class="flex mb-2">
+                                    <!-- <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                </li>
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
+                                </li> -->
+                                </ul>
+                                <p class="text-sm text-justify mt-5">En tant que responsable de l'intégration et de la
+                                    gestion des
+                                    infrastructures, je suis chargé de mettre en place et de maintenir
+                                    l'authentification
+                                    via l'Active Directory (AD) en utilisant le protocole LDAPS sur des serveurs Windows
+                                    dédiés à nos filiales. Mon rôle consiste à créer des utilisateurs et des groupes, à
+                                    les
+                                    associer, à gérer leurs mots de passe et à configurer les connexions aux API en
+                                    utilisant des certificats pour assurer une sécurité renforcée.
+                                    <br>
+                                    De plus, je supervise et configure les serveurs Tomcat et Apache sur ces mêmes
+                                    serveurs
+                                    Windows, en veillant à ce qu'ils acceptent les connexions sécurisées via des
+                                    certificats
+                                    SSL et en garantissant que les noms de serveur appropriés sont correctement
+                                    configurés.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Parcours Scolaire -->
+                <section class="mb-6">
+                    <h2 class="text-2xl mt-6 pb-1 border-b border-gray-400 font-semibold">Parcours Scolaire</h2>
+                    <ul class="mt-2">
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">CNAM Polynésie</strong>
+                                <!-- <a href="diplomes/l3.pdf" download="l3.pdf" class="italic text-blue-500 underline target="_blank"">Télécharger mon diplôme</a> -->
+                            </p>
+                            <p class="flex justify-between text-sm">Licence Informatique</p>
+                        </li>
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">Université de Polynésie
+                                    Française</strong>
+                                <!-- <a href="diplomes/daeu1.pdf" download="daeu1.pdf" class="italic text-blue-500 underline target="_blank"">Télécharger mon diplôme</a> -->
+                            </p>
+                            <p class="flex justify-between text-sm">Diplôme d’Accès aux Études Universitaires</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <!-- Fin de page et blagues -->
+        <footer class="mt-6">
+            <p class="bg-gray-600 text-white text-center text-sm pb-2 rounded-t">La technologie nous offre plus de
+                temps, mais c'est à nous de choisir comment l'utiliser.</p>
+            <p class="bg-gray-600 text-white text-center text-sm pb-2">Quelle prétention de prétendre que l'informatique
+                est récente : Adam et Eve avaient déjà un Apple !</p>
+            <p class="bg-gray-600 text-white p-3 text-center rounded-b text-xs pb-2">
+                Créé <!--with <span id="heart"></span>--> par Hiomai : 2023 - <span id="current-year"></span>
+            </p>
+        </footer>
+    </div>
+</body>
+<script>
+
+    function toggleContent(element) {
+        // Trouver le contenu associé
+        const content = element.nextElementSibling;
+
+        // Basculer la visibilité du contenu
+        content.classList.toggle("hidden");
+
+        // Basculer la rotation de la flèche
+        const arrow = element.querySelector("span");
+        arrow.classList.toggle("rotate-180");
+    }
+
+    //const heartEmoji = '❤️';
+    const year = new Date().getFullYear();
+    //document.getElementById('heart').innerText = heartEmoji;
+    document.getElementById('current-year').innerText = year;
+</script>
+
+</html>
